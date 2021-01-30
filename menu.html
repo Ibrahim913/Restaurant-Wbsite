@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENU</title>
+	<meta thhp-equive="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+	<div class="header">
+			<div class="navbar">
+				<div class="container">
+					<img src="image/logo.png" width="45" height="45" style="margin-top: 12px; margin-left:3px; ">
+					<h2><span id="RAW">RAW</span><span id="CANVAS">CANVAS</span></h2>
+					<ul>
+						<li><a href="rstaurant.html">HOME</a></li>
+						<li><a href="rstaurant.html">ABOUT</a></li>
+						<li><a href="menu.html">MENU</a></li>
+						<li><a href="#delivery">DELIVERY</a></li>
+						<li><a href="#" id="RESERVATION">RESERVATION</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="container">
+					<img src="image/pexels-fauxels-3184192.jpg" width="1280">
+				
+
+					<div class="content1">
+						<h1 style="line-height: 1.5" style="letter-spacing: 6px;">RAW CANVAS Menu</h1>
+						<p style="line-height: 1.7">
+							<small>All food dishes are very delicious</small>
+						</p>
+					</div>
+				</div>	
+
+			</div>
+				<div class="container">
+	<form>
+		<fieldset>
+			<legend>RESERVATION</legend>
+			<label>Name</label><br>
+			<input type="text" name="name"><br>
+			<label>Phone Number</label><br>
+			<input type="text" name="phone-num"><br>
+			<label>Person</label><br>
+			<select id="selection">
+				<option disabled="" selected="">Person</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</select><br>
+			<label>Date</label><br>
+			<input type="date" name="date"><br>
+			<label>Time</label><br>
+			<input type="time" name="time"><br><br>
+			<button id="RESERVE">RESERVE</button>
+		</fieldset>
+	</form>
+	</div>
+		</div>
+
+		<!--start gallery-->
+		<div class="gallery">
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food.jpg">
+	  			<div class="imginfo">
+	  				<h1>chicken Grill</h1>
+	  			</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food1.jpg">
+	  			<div class="imginfo"><h1>Fresh Mushrooms</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food2.jpg">
+	  			<div class="imginfo"><h1>Pasta With White Sauce</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food3.jpg">
+	  			<div class="imginfo"><h1>All Kinds of Salads</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food4.jpg">
+	  			<div class="imginfo"><h1>Pizza and Pies</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food5.jpg">
+	  			<div class="imginfo"><h1>Fried chicken</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food6.jpg">
+	  			<div class="imginfo"><h1>Sea Food</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food7.jpg">
+	  			<div class="imginfo"><h1>Snacks and Candy</h1></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="slides fade">
+	  			<img class="galleryimg"src="images/food8.jpg">
+	  			<div class="imginfo"><h1>Hot Food</h1></div>
+			</div>
+		</div>
+
+			<div class="indicatorbox">
+	 			<span class="indicator" onclick="show(1)"></span> 
+	  			<span class="indicator" onclick="show(2)"></span> 
+	  			<span class="indicator" onclick="show(3)"></span> 
+	  			<span class="indicator" onclick="show(4)"></span> 
+	  			<span class="indicator" onclick="show(5)"></span> 
+	  			<span class="indicator" onclick="show(6)"></span> 
+	  			<span class="indicator" onclick="show(7)"></span> 
+	  			<span class="indicator" onclick="show(8)"></span> 
+	  			<span class="indicator" onclick="show(9)"></span> 
+			</div>
+			<div class="container">
+			<a class="previous" onclick="specificslide(-1)"><img src="image/left.png" id="left"></a>
+			<a class="next"  onclick="specificslide(1)"><img src="image/right.png" id="right"></a>
+			</div>
+		</div>
+
+		<!--end gallery-->
+
+		<!--start menu-->
+
+
+        <div class ="OurServices">
+			    <div class="container" >
+				    <h1 id="delivery">Popular Dishes & Drinks</h1>
+
+
+				   <!--  <form id="CONFIRMATION">
+				    	<fieldset>
+				    		<legend>Confirm your order</legend>
+					    	<input type="text" name="number">
+					    	<br>
+					    	<button id="NUMBER">CONFIRM</button>
+				    	</fieldset>	
+				    </form> -->
+
+				    <div class="services">
+					    <div class="price">
+						    <img src="image/pexels-kasumi-loffler-3535383.jpg" alt="steak" style="width:270px;height:310px;">
+						        <h2> Steak </h2> 
+						        <p>$19.20</p>
+						</div>
+						<div class="price">
+						    <img src="image/pexels-harry-dona-2338407.jpg"alt="grilled chicken"style="width:270px;height:310px;">
+						    <h2> Grilled Chicken</h2>
+						    <p>$25.96</p>
+						</div>
+						<div class="price">
+						    <img src="image/pexels-nerfee-mirandilla-3186654.jpg" alt="chicken"style="width:270px;height:310px;">
+						    <h2 >Chicken & Sauce</h2>
+						    <p>$31.99</p>
+						</div>
+						<div class="price">
+						    <img src="image/pexels-kaboompics-com-5938.jpg" alt="salade"style="width:270px;height:310px;">
+						    <h2> Salde</h2>
+						    <p>$10.5</p>
+						</div>
+
+						<div class="price">
+						    <img src="image/pexels-trang-doan-936611.jpg" alt="salade" style="width:270px;height:310px;">
+						        <h2>Chicken Salade </h2> 
+						        <p>$22.99</p>
+						</div>
+						<div class="price">
+						    <img src="image/pexels-samfotograffo-3052366.jpg"alt="burger"style="width:270px;height:310px;">
+						    <h2>Beef Burger</h2>
+						    <p>$10.96</p>
+						</div>
+						<div class="price">
+						    <img src="image/seafood.jpg" alt="Seafood"style="width:270px;height:310px;">
+						    <h2 >Seafood</h2>
+						    <p>$41.99</p>
+						</div>
+						<div class="price">
+						    <img src="image/FrilledFish.jpg" alt="grilled fish"style="width:270px;height:310px;">
+						    <h2> Grilled Fish</h2>
+						    <p>$33.99</p>
+						</div>
+
+
+						<div class="price">
+						    <img src="image/coffe1.jpg" alt="coffe" style="width:270px;height:310px;">
+						        <h2>French Coffe</h2> 
+						        <p>$5.33</p>
+						</div>
+						<div class="price">
+						    <img src="image/coffe3.jpg"alt="coffe"style="width:270px;height:310px;">
+						    <h2>Creamy coffee</h2>
+						    <p>$7.55</p>
+						</div>
+						<div class="price">
+						    <img src="image/coffe4.jpg" alt="frensh coffe"style="width:270px;height:310px;">
+						    <h2>Coffe With Milk</h2>
+						    <p>$6.55</p>
+						</div>
+						<div class="price">
+						    <img src="image/coffe2.jpg" alt="tea fish"style="width:270px;height:310px;">
+						    <h2>Tea</h2>
+						    <p>$3.99</p>
+						</div>
+
+						<div class="price">
+						    <img src="image/orange juice.jpg" alt="coffe" style="width:270px;height:310px;">
+						        <h2>Orange Juice</h2> 
+						        <p>$4.33</p>
+						</div>
+						<div class="price">
+						    <img src="image/Strawberry juice .jpg"alt="coffe"style="width:270px;height:310px;">
+						    <h2>Strawberry Juice</h2>
+						    <p>$9.55</p>
+						</div>
+						<div class="price">
+						    <img src="image/fruit juice.jpg" alt="frensh coffe"style="width:270px;height:310px;">
+						    <h2>Fruit Juice</h2>
+						    <p>$8.55</p>
+						</div>
+						<div class="price">
+						    <img src="image/ice coffe.jpg" alt="tea fish"style="width:270px;height:310px;">
+						    <h2>Ice Coffe</h2>
+						    <p>$4.55</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		<!--end menu-->
+		<!--strat contact -->
+		
+			<div class="CONTACT" id="contact">
+				<div class="container">
+					<div class="info">
+						<h1>COTACT US</h1>
+						<p>Location : Cairo,Giza, Lorem Tower,EG<br>
+						Phone : 01073655377<br>
+						Email : resturent@gmail.com</p>
+					</div>
+
+					<div class="form">
+						<input type="text" name="Email" placeholder=" Email" required="">
+						<input type="password" name="password" placeholder=" Pssword" required="">
+						<button>Loge In</button>
+					</div>
+
+					<div class="form">
+						<input type="text" name="Email" placeholder=" Email" required="">
+						<button style="width: 369px; margin-left: 10px;">SUBSCRIBE</button><br>
+						<div class="logoes">
+							<a href="https://www.facebook.com/Raw-Canvas-Restaurant-bar-103438678134474" class="logo" target="_blank">
+								<img src="image/facebook.png">
+							</a>
+							<a href="https://eg.linkedin.com/" class="logo" target="_blank">
+								<img src="image/linkedin.png">
+							</a>
+							<a href="https://www.instagram.com/" class="logo" target="_blank">
+								<img src="image/instagram.png">
+							</a>
+							<a href="https://twitter.com/login?lang=ar" class="logo" target="_blank">
+								<img src="image/twitter.png">
+							</a>
+					</div>
+				</div>
+					
+				</div>
+			</div>
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>	

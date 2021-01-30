@@ -1,0 +1,479 @@
+body
+{
+background-color: #EFEFEF;
+
+}
+.container
+{
+	width: 1280px;margin: auto;
+	position: relative;
+}
+/*start header*/
+.header .navbar
+{
+	background-color: #DDD;/*rgba(255 ,255 ,255 , 0.0);*/
+	color:color: #3c3c3c;
+	overflow: hidden;
+}
+.header .navbar h2
+{
+	float:left;
+	font:bold 25px tahoma;
+} 
+.header .navbar h2 #RAW{color: #003a41;} 
+.header .navbar h2 #CANVAS{color: #00545e;} 
+.header .navbar ul 
+{
+	list-style: none;
+	overflow: hidden;
+	float: right;
+	padding-left: 0px;
+}
+.header .navbar ul li
+{
+	float: left;
+	padding: 7px;
+}
+.header .navbar ul a
+{
+	text-decoration: none;
+	color: #3c3c3c;
+	font:19px Tahoma;
+	padding: 3px;
+}
+.header .navbar ul a:hover
+{
+	background-color:rgba(0 ,106 ,118 ,0.9);
+	border-radius: 7px;
+	border:1px solid rgba(3 ,134 ,149 ,0.7);
+	padding: 8px;
+	color: #EFEFEF;
+}
+.header .slider
+{
+	height: 200px;
+}
+.slider .container img
+{
+	vertical-align: middle;
+}
+.slider .container .content1  , .content2
+{
+	position: absolute;
+	background-color: rgba(0,0,0,.6);
+	bottom: 0;
+	left: 0;
+	width: 53.2%;
+	padding: 300px;
+	padding-top: 347px;
+	padding-bottom:350px;
+	font:bold 34px "Arbutus Slab","Trebuchet MS" ,serif;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	box-shadow: 0px 6px 6px 0px #000;
+
+}
+.slider .container .content1 p
+{
+
+	font:lighter 40px "Comic Sans MS";
+	color: #d79b3c;
+	text-shadow: 0px 6px 6px #653e00;
+
+
+}
+.container #right
+{
+	position: absolute;
+	bottom: 230px;
+	right: 26px;
+	background-color: rgba(0,0,0,.7);
+	opacity: .7;
+	width: 70px;
+	padding: 12px;
+	border-radius: 14px;
+	margin: auto;
+
+}
+.container #left
+{
+	position: absolute;
+	bottom: 230px;
+	left: 18px;
+	background-color: rgba(0,0,0,.7);
+	opacity: .7;
+	width: 70px;
+	padding: 12px;
+	border-radius: 14px;
+	margin: auto;
+
+}
+.container #right:hover
+{
+	position: absolute;
+	background-color: #000;
+	width: 70px;
+	padding: 12px;
+	border-radius: 14px;
+	margin: auto;
+		cursor: pointer;
+
+}
+.container #left:hover
+{
+	position: absolute;
+	background-color: #000;
+	width: 70px;
+	padding: 12px;
+	border-radius: 14px;
+	margin: auto;
+		cursor: pointer;
+
+}
+/*end about*/
+
+
+/*start gallery*/
+.gallery{
+	position: relative;
+	box-sizing: border-box;
+	position: relative;
+	top: 802px;
+}
+.galleryimg{
+	width:100%;
+	box-sizing: border-box;
+	vertical-align: middle;
+	height: 600px;
+
+}
+.next,.previous
+{
+ transform: translate(0,-50%);
+  transition: 0.6s ease;
+}
+.next {
+  box-sizing: border-box;
+}
+.previous:hover, .next:hover {
+  box-sizing: border-box;
+}
+.imginfo{
+	position: absolute;
+	top:50%;
+	right:10%;
+	transform: translate(-50%,-50%);
+	color: white;
+	box-sizing: border-box;
+}
+.slides{
+	display: none;
+	box-sizing: border-box;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.indicator {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .indicator:hover {
+  background-color: #717171;
+}
+.indicatorbox
+{
+display: inline-block;
+position: absolute;
+top: 95%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.container .imginfo h1
+{
+	padding: 14px;
+	width: 380px;
+	font:bold 30px "Comic Sans MS";
+	color:#fbb448;
+	position: absolute;
+	right: 700px;
+	bottom: 150px;
+	background-color: rgba(0 ,65 ,67 ,0.8);
+	word-spacing: 3px;
+	border-radius: 10px;
+	text-align: center;
+
+}
+/*end gallery*/
+/*start menu*/
+.OurServices{
+	padding-top:50px;
+	padding-bottom:70px;
+    text-align:center;
+    background-color:#f2f2f2;
+    position: relative;	
+    top: 797px;
+}
+.OurServices h1
+{
+	
+	font:bold 50px "Kaushan Script",cursive;
+	color:#003d44;
+	text-align: center;
+	text-shadow: 0px 6px 6px #434343;
+}
+.OurServices h2{
+    color:#00383f;
+    font:bold 25px tahoma;
+  	text-shadow: 0px 2px 4px #434343;
+}
+.OurServices p{
+    line-height:1.9;
+    color:#666;
+    font:bold 16px arial;
+    
+}
+.services{
+	overflow:hidden;
+    
+}
+.services > div{
+	float:left;
+	width:25%;
+    margin-top:10px;
+}
+.services > div img{
+    width:92px;
+    margin:5px;
+    padding:3px;
+    background-color:#fff;
+    border:0.5px solid rgba(204 ,204 ,204 ,.7);
+    border-radius: 8px;
+} 
+.services > div img:hover{
+    width:92px;
+    margin:5px;
+    padding:3px;
+    background-color:#fff;
+    border:0.5px solid rgba(204 ,204 ,204 ,.7);
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px 0px #000;
+} 
+.menu .container .intro img
+{
+	vertical-align: middle;
+	position: relative;
+	bottom: 200px;
+}
+.menu .container .intro .content3 
+{
+	position: absolute;
+	background-color: rgba(255,255,255,.4);
+	bottom: 32%;
+	left: 22%;
+	width: 50%;
+	padding: 40px;
+	font:bold 35px "Arbutus Slab","Trebuchet MS" ,serif;
+	color: #000;
+	text-align: center;
+	border-radius: 12px;
+	margin: auto;
+}
+.OurServices .container .services .price h2
+{
+	letter-spacing: 2px;
+	font:bold 30px "Comic Sans MS";
+	line-height: .2px;
+}
+.OurServices .container .services .price p
+{
+	letter-spacing: 2px;
+	font:bold 30px "Comic Sans MS";
+	color: #005e69;
+}
+.OurServices .container .services .price:hover
+{
+	box-shadow: 0px 5px 5px 0px #000;
+	background-color: rgba(1 ,80 ,89,.5);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+
+
+/*end menu*/  
+/*form*/
+form
+{
+	margin: auto;
+	width: 400px;	
+	background-color: rgba(255 ,255 ,255 ,.8);
+	font:bold 20px tahoma;
+	border-radius: 15px;
+	position: absolute;
+	display: none;
+	margin: auto;
+	left: 450px;
+
+
+	
+}
+fieldset legend
+{
+	margin:auto;
+	text-align: center;
+	font:lighter 30px "Comic Sans MS";
+	color: #000;
+	
+}
+fieldset{border:none;}
+label
+{
+	font:lighter 18px arial;
+	color: #000;
+	margin-left: 8px;
+
+}
+input
+{
+	padding: 10px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	width: 320px;
+	font:lighter 18px "Comic Sans MS";
+	background-color: rgba(255 ,255,255 ,.5);
+	color: #000;
+	border-radius: 14px;
+	border:1px solid #000;
+
+}
+select
+{
+	padding: 11px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	width: 340px;
+	font:lighter 18px "Comic Sans MS";
+	background-color: rgba(0 ,0 ,0 ,.5);
+	color: #fff;	
+	border-radius: 14px;
+	border:1px solid #000;
+}
+form button
+{
+	font:bold 30px Tahoma;
+	color: #fff;
+	background-color: rgba(0 ,88 ,104 ,.7);
+	border-radius: 13px;
+	padding: 10px;
+	width: 320px;
+	margin-left: 10px;
+	margin-bottom:10px; 
+
+
+}
+form button:hover
+{
+	font:bold 30px Tahoma;
+	color: #018da6;
+	background-color: rgba(0 ,0 ,0 ,.7);
+	border-radius: 13px;
+	padding: 12px;
+}
+/*start concat*/
+
+.CONTACT
+{
+	padding-top: 19px;
+	border:1px solid #000;
+	position: relative;
+	top: 793px;
+	background-color: rgba(0 ,55 ,63);
+	color: #EFEFEF;
+	overflow: hidden;
+
+}
+.CONTACT .container .info h1
+{
+	font:bold 30px Tahoma ;
+	line-height: 15px;
+	text-shadow: 0px 4px 3px #000;
+}
+.CONTACT .container .info p
+{
+	font:lighter 18px arial;
+	line-height: 50px;
+}
+.CONTACT .container .info ,
+.CONTACT .container .form 
+{
+width: 33.333%;
+float: left;
+}
+.CONTACT .container .form form
+{
+	margin: auto;
+	width: 400px;	
+	background-color: rgba(255 ,255 ,255 ,0.0);
+	font:bold 20px tahoma;
+	border-radius: 15px;
+	position: absolute;
+	display: none;
+	margin: auto;
+	left: 450px;	
+}
+.form input
+{
+	padding: 12px;
+	padding-left: 19px;
+	margin-bottom: 20px;
+	margin-top: 6px;
+	width: 350px;
+	font:lighter 22px "Comic Sans MS";
+	background-color: rgba(0 ,90 ,103 ,0.5);
+	color: #fff;
+	border-radius: 15px;
+	border:1px solid #000;
+}
+.form button
+{
+	font:bold 30px Tahoma;
+	color: #fff;
+	background-color: rgba(0 ,90 ,103 ,0.3);
+	border-radius: 16px;
+	padding: 10px;
+	width: 200px;
+	margin-left: 96px;
+	margin-bottom:10px; 
+}
+.form button:hover
+{
+	font:bold 30px Tahoma;
+	color: #018da6;
+	background-color: rgba(0 ,0 ,0 ,.7);
+	border-radius: 15px;
+	padding: 10px;
+
+}
+.logo
+{
+	padding: 15px;
+	text-decoration: none;
+}
+.logoes
+{
+	margin: 30px;
+	margin-left: 65px;
+}
+/*End concat*/
+
+
+
